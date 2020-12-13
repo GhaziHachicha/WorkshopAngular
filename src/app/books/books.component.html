@@ -1,0 +1,21 @@
+<br/><br/>
+<table border="2">
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>titre</th>
+      <th>Auteur</th>
+      <th>nombre de page</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let book of books">
+      <td>{{book.id}}</td>
+      <td>{{book.titre }}</td>
+      <td>{{book.auteur}}</td>
+      <td>{{book.nbrPage}}</td>
+      <td><!--<input type="button" (click)="delete(vol.id)" value="supprimer">--></td>
+    </tr>
+  </tbody>
+</table>
