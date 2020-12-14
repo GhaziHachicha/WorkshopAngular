@@ -1,3 +1,7 @@
-<a routerLink="/">Liste livres  </a>
-<a routerLink="/Ammunt"> ammunt livre</a>
-<app-books></app-books>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a routerLinkActive="active" [routerLink]="['/Liste']">Liste livres  </a></li>
+  <li><a routerLinkActive="active" [routerLink]="['Add-Book']" > ajouter livre</a></li>
+</ul>
+
+<router-outlet></router-outlet>
