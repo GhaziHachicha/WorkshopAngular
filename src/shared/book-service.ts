@@ -9,7 +9,7 @@ import {Router} from "@angular/router";
 })
 export class BookService {
 
-  constructor(private http: HttpClient, private router: Router) {
+  constructor(private http: HttpClient, private router: Router) { 
   }
 
 /*
@@ -35,7 +35,7 @@ export class BookService {
       .http.get<any>('http://localhost:3000/users/');
   }*/
   addBook(book : Books) : Observable<Books>{
-    return this.httpClient.post<Books>('http://localhost:3000/books', book, this.httpOptions);
+    return //this.httpClient.post<Books>('http://localhost:3000/books', book, this.httpOptions);
   }
   
 
